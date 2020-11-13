@@ -1,0 +1,13 @@
+xrandr --output DP-2 --auto --primary --output HDMI-0 --auto --left-of DP-2
+tint2 &
+picom &
+nitrogen --restore &
+steam &
+discord &
+brave &
+pnmixer &
+ckb-next -b &
+headsetcontrol -l 0 &
+numlockx on &
+/usr/lib/xfce4/notifyd/xfce4-notifyd &
+light-locker &
