@@ -77,9 +77,9 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     -- launch dmenu
     , ((modm,               xK_p     ), spawn "dmenu_run")
 
-    , ((0, 0x1008ff13), spawn "amixer set Master 1%+ unmute")
-    , ((0, 0x1008ff11), spawn "amixer set Master 1%- unmute")
-    , ((0, 0x1008ff12), spawn "amixer set Master toggle")
+    , ((0, 0x1008ff13), spawn "amixer -D pulse set Master 1%+ unmute")
+    , ((0, 0x1008ff11), spawn "amixer -D pulse set Master 1%- unmute")
+    , ((0, 0x1008ff12), spawn "amixer -D pulse set Master toggle")
 
     -- launch gmrun
     , ((modm .|. shiftMask, xK_p     ), spawn "gmrun")
