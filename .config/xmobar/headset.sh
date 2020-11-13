@@ -8,8 +8,12 @@ else
     var=$(headsetcontrol -b -c)
     if [[ "$var" -eq "-1" ]]
     then
-	echo "Charging/Not Connected"
-    else
-	echo "$var%"
+	echo "Charging"
+    else if [[ "$var" -eq "-2" ]]
+        then
+	    echo "Not Connected"
+        else
+	    echo "$var%"
+        fi
     fi
 fi
