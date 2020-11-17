@@ -279,7 +279,8 @@ myLogHook = return ()
 -- By default, do nothing.
 myStartupHook = do
     spawnOnce "xrandr --output DP-2 --auto --primary --output HDMI-0 --auto --left-of DP-2 &"
-    spawnOnce "nitrogen --restore &"
+    spawnOnce "nitrogen --set-auto /home/piwalker/Pictures/BHPUd0d.jpg --head=0 &"
+    spawnOnce "nitrogen --set-auto /home/piwalker/Pictures/BHPUd0d.jpg --head=1 &"
     spawnOnce "picom &"
     spawnOnce "ckb-next -b &"
     spawnOnce "headsetcontrol -l 0 &"
